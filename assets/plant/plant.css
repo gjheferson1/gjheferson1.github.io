@@ -1,0 +1,9 @@
+.hero{padding-bottom:110px}
+.garden{position:absolute;right:218px;bottom:90px;width:160px;height:300px;border:0;padding:0;background:transparent;color:var(--muted);cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+.garden canvas{display:block;width:160px;height:300px;image-rendering:pixelated;image-rendering:crisp-edges}
+.garden-hint{position:absolute;top:187px;left:-24px;width:208px;text-align:center;font:10px/1.4 Arial,sans-serif;letter-spacing:.4px;opacity:0;transition:opacity .2s;pointer-events:none}
+.garden:hover .garden-hint,.garden:focus-visible .garden-hint{opacity:1}
+.hero-bottom{padding-right:0}.hero-intro{max-width:650px}
+@media(min-width:801px) and (max-width:1200px){.garden{right:190px}.hero-intro{max-width:calc(100% - 340px)}.hero-intro{gap:16px}.hero-intro .intro{font-size:16px}.hero-intro .profile-photo{width:88px;height:88px;flex-basis:88px}}
+@media(max-width:800px){.hero{padding-bottom:25px}.hero-intro{max-width:100%}.garden{position:relative;right:auto;bottom:auto;display:block;margin:-20px auto 0}.toolstrip{margin-top:20px}}
+@media(prefers-reduced-motion:reduce){.garden-hint{transition:none}}
